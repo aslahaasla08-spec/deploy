@@ -10,11 +10,11 @@ jobs:
          - name: Copy files via SSH
            uses: appleboy/scp-action@v1
            with:
-           host: ${{ secrets.HOST }}
-           username: ${{ secrets.USERNAME }}
-           key: ${{ secrets.KEY }}
-           port: 22
-          source: "."
-          target: var/www/html
+             host: ${{ secrets.HOST }}
+             username: ${{ secrets.USERNAME }}
+             key: ${{ secrets.KEY }}
+             port: 22
+             source: "."
+             target: var/www/html
 
    
